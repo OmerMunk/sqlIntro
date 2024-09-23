@@ -1,0 +1,37 @@
+create database
+\c databasename
+create table - columns, constraints
+
+inert into - 3 options
+
+select
+
+- no case sensitivity
+
+query structure
+
+distinct
+
+where
+
+conditions( =, <>, >, <, >=, <=, between, in, like, is null, is not null)
+
+like, %
+
+date
+
+date_part
+
+set datestyle
+
+group by
+
+having
+
+drop table (cascade, restrict, if exist)
+
+alter
+
+joins
+
+order by
