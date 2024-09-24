@@ -41,7 +41,7 @@ CREATE TABLE courses (
 CREATE TABLE order_products (
     order_id INT,
     product_id INT,
-    product_name VARCHAR(100),  -- Partial dependency
+    product_name VARCHAR(100),  
     PRIMARY KEY (order_id, product_id)
 );
 
@@ -53,7 +53,7 @@ CREATE TABLE students (
     student_id SERIAL PRIMARY KEY,
     student_name VARCHAR(100),
     department_id INT,
-    department_name VARCHAR(100)  -- Partial dependency
+    department_name VARCHAR(100)  
 );
 
 
@@ -64,7 +64,7 @@ CREATE TABLE students (
 CREATE TABLE enrollments (
     student_id INT,
     course_id INT,
-    course_name VARCHAR(100),  -- Partial dependency
+    course_name VARCHAR(100),  
     PRIMARY KEY (student_id, course_id)
 );
 
@@ -77,7 +77,7 @@ CREATE TABLE employees (
     emp_id SERIAL PRIMARY KEY,
     emp_name VARCHAR(100),
     address VARCHAR(255),
-    city VARCHAR(100)  -- Transitive dependency on address
+    city VARCHAR(100) 
 );
 
 
@@ -86,7 +86,7 @@ CREATE TABLE orders (
     order_id SERIAL PRIMARY KEY,
     customer_name VARCHAR(100),
     customer_address VARCHAR(255),
-    customer_city VARCHAR(100)  -- Transitive dependency
+    customer_city VARCHAR(100) 
 );
 
 
@@ -96,7 +96,7 @@ CREATE TABLE products (
     product_id SERIAL PRIMARY KEY,
     product_name VARCHAR(100),
     category_id INT,
-    category_name VARCHAR(100)  -- Transitive dependency
+    category_name VARCHAR(100) 
 );
 
 
